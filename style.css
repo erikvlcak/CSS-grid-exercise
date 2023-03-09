@@ -1,0 +1,11 @@
+* {
+    border: 1px solid red;
+}
+
+body {
+    font-family: 'Red Hat Text', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.title_small {}
