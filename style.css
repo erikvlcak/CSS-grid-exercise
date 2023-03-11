@@ -1,11 +1,81 @@
 * {
-    border: 1px solid red;
+    border: 1px solid rgb(123, 36, 36);
+    margin: 0px;
+    padding: 0px;
+    color: white;
 }
 
 body {
     font-family: 'Red Hat Text', sans-serif;
-    margin: 0px;
-    padding: 0px;
+
 }
 
-.title_small {}
+img {
+    width: 20px;
+    height: auto;
+}
+
+#page {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+#sidebar {
+    display: grid;
+    grid-template-rows: 100px 1fr 2fr;
+}
+
+#logo {
+    display: grid;
+    grid-template: 1fr / 1fr 4fr;
+}
+
+.icon {
+    display: grid;
+    place-items: center;
+}
+
+.title {
+    display: grid;
+    place-items: center start;
+}
+
+#sidebar_top,
+#sidebar_bottom {
+    display: grid;
+    grid-template: repeat(6, 50px) / 1fr 4fr;
+}
+
+
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.violet {
+    background-color: violet;
+}
