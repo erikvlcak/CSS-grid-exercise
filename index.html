@@ -13,71 +13,88 @@
         rel="stylesheet">
 </head>
 
-<body>
-    <div id="page">
+<body class="font-family ">
+    <div id="page" class="grid">
 
-        <div id="sidebar" class="red">
+        <div id="sidebar"
+            class="grid gap-100 placeItems-start padding-20 color-darkgreen shadow-right min-height-100vh">
 
-            <div id="logo">
-                <img src="./images/controller.png" alt="logo" class="icon iconLogo">
-                <div class="title titleLogo">Gaming Hub</div>
+            <div id="logo" class="grid gap-20 placeItems-center-start">
+                <img src="./images/controller.png" alt="logo">
+                <div class="invert-color font-size-30px font-weight-700">Gaming Hub</div>
             </div>
-            <div id="sidebar_top">
-                <img src="./images/arrow-projectile.png" alt="singleplayer" class="icon iconSinglePlayer">
-                <div class="title titletSinglePlayer">Singleplayer Games</div>
-                <img src="./images/arrow-projectile-multiple.png" alt="multiplayer" class="icon iconMultiplayer">
-                <div class="title titleMultiplayer">Multiplayer Games</div>
-                <img src="./images/tournament.png" alt="tournaments" class="icon iconTournaments">
-                <div class="title titleTournaments">Gaming Tournaments</div>
-                <img src="./images/medal.png" alt="achievements" class="icon iconAchievements">
-                <div class="title titleAchievements">Achievements List</div>
-                <img src="./images/account-group.png" alt="communities" class="icon iconCommunities">
-                <div class="title titleCommunities">Gaming Communities</div>
-                <img src="./images/cart.png" alt="shop" class="icon iconShop">
-                <div class="title titleShop">Purchase games</div>
+
+            <div id="sidebar_top" class="grid gap-20 placeItems-center-start">
+                <img src="./images/arrow-projectile.png" alt="singleplayer">
+                <div>Singleplayer Games
+                </div>
+                <img src="./images/arrow-projectile-multiple.png" alt="multiplayer"
+                    class="width-30 height-auto invert-color">
+                <div>Multiplayer Games</div>
+                <img src="./images/tournament.png" alt="tournaments">
+                <div>Gaming Tournaments</div>
+                <img src="./images/medal.png" alt="achievements">
+                <div>Achievements List
+                </div>
+                <img src="./images/account-group.png" alt="communities">
+                <div>Gaming Communities
+                </div>
+                <img src="./images/cart.png" alt="shop">
+                <div>Purchase games</div>
             </div>
-            <div id="sidebar_bottom">
-                <img src="./images/cogs.png" alt="settings" class="icon iconSettings">
-                <div class="title titleSettings">Account Settings</div>
-                <img src="./images/help.png" alt="help" class="icon iconHelp">
-                <div class="title titleHelp">Support</div>
-                <img src="./images/logout.png" alt="logout" class="icon iconLogout">
-                <div class="title titleLogout">Logout</div>
+
+            <div id="sidebar_bottom" class="grid gap-20 placeItems-center-start">
+                <img src="./images/cogs.png " alt="settings">
+                <div>Account Settings</div>
+                <img src="./images/help.png " alt="help">
+                <div>Support</div>
+                <img src="./images/logout.png " alt="logout">
+                <div>Logout</div>
             </div>
         </div>
 
+
         <div id="main">
 
-            <div id="header" class="green">
-                <div id="searchBar">
-                    <img src="./images/magnify.png" alt="search" class="icon iconSearch">
-                    <div class="bar searchfield">search bar</div>
+            <div id="header" class="grid gap-20 padding-20 color-orange border-bottom">
+
+                <div id="searchBar" class="grid gap-20 placeItems-center-start">
+                    <img src="./images/magnify.png" alt="search" class="width-30 height-auto invert-color">
+                    <input type="text" name="searchBar" id="searchBarField"
+                        class=" border-radius-15px padding-5 color-gray placeItems-center-start search-field">
+
                 </div>
-                <div id="smallIcons">
-                    <img src="./images/bell-ring.png" alt="notification" class="icon iconBell">
-                    <img src="./images/person1.png" alt="profile-picture" class="pic userPicSmall">
-                    <div class="title userNameSmall">erik vlcak</div>
+
+                <div id="smallIcons" class="grid placeItems-center">
+                    <img src="./images/bell-ring.png" alt="notification" class=" width-30 height-auto invert-color">
+                    <img src="./images/person1.png" alt="profile-picture" class="circle width-40 height-auto">
+                    <div class="invert-color font-weight-700">Erik Vlcak</div>
                 </div>
-                <div id="largeIcons">
-                    <div class="text greeting">hi there,</div>
-                    <div class="title userNameLarge">erik vlcak hash</div>
-                    <img src="./images/person1.png" alt="profile-picture" class="pic userPicLarge">
+
+                <div id="largeIcons" class="grid column-gap-20 placeItems-center-start">
+                    <div class="invert-color font font-size-15px">Hi there,</div>
+                    <div class="invert-color font-weight-700 font-size-25px">Erik Vlcak (@ERKVLCVK)
+                    </div>
+                    <img src="./images/person1.png" alt="profile-picture"
+                        class="circle userPicLarge width-50 height-auto">
                 </div>
-                <div id="buttons">
-                    <button class="btn btnNew">New</button>
-                    <button class="btn btnUpdate">Update</button>
-                    <button class="btn btnShare">Share</button>
+
+                <div id="buttons" class="grid gap-30 placeItems-center-stretch">
+                    <button>New</button>
+                    <button>Update</button>
+                    <button>Share</button>
                 </div>
             </div>
 
 
-            <div id="content" class="blue">
-                <div id="articles_main">
-                    <div class="title titleArticles">Latest Gaming Articles</div>
-                    <div id="gamingArticles">
-                        <div class="article">
-                            <div class="title titleArticle">Funniest Cyberpunk 2078 bugs</div>
-                            <p class="text textArticle">Donec malesuada justo cursus quam tincidunt maximus. Praesent
+            <div id="content" class="grid gap-30 color-gray min-height-100vh">
+                <div id="articles_main" class="grid row-gap-20">
+                    <div class="titleArticles font-size-25px font-weight-700">Latest Gaming Articles</div>
+                    <div id="gamingArticles" class="grid gap-30">
+
+                        <div class="article grid">
+                            <div class="titleArticle font-weight-700">Funniest Cyberpunk 2078 bugs</div>
+                            <p class="textArticle">Donec malesuada justo cursus quam tincidunt maximus. Praesent
                                 venenatis eleifend ipsum id rutrum. Donec pharetra
                                 placerat justo in ultrices. Nam nec euismod lectus. Etiam et lectus in diam tincidunt
                                 aliquet ac id lorem. Donec velit
@@ -89,31 +106,31 @@
                                 mollis, tortor dui pulvinar ipsum,
                                 vitae elementum metus urna at mi. Aenean ante tortor, finibus porta molestie aliquet,
                                 faucibus eu tellus.</p>
-                            <div class="articleIcons">
-                                <img src="./images/thumb-up.png" alt="like" class="icon iconLike">
-                                <img src="./images/share.png" alt="share" class="icon iconShare">
-                                <img src="./images/comment.png" alt="comment" class="icon iconComment">
+                            <div class="articleIcons grid placeItems-center">
+                                <img src="./images/thumb-up.png" alt="like">
+                                <img src="./images/share.png" alt="share">
+                                <img src="./images/comment.png" alt="comment" class="width-30 height-auto">
                             </div>
                         </div>
 
-                        <div class="article">
-                            <div class="title titleArticle">Best mods for GTA VII</div>
-                            <p class="text textArticle">Vestibulum diam risus, volutpat quis convallis a, facilisis sed
+                        <div class="article grid">
+                            <div class="titleArticle font-weight-700">Best mods for GTA VII</div>
+                            <p class="textArticle">Vestibulum diam risus, volutpat quis convallis a, facilisis sed
                                 orci. Fusce ornare massa elit, sed auctor ipsum ultrices
                                 sit amet. Maecenas eleifend blandit placerat. Proin ut pulvinar leo, pretium condimentum
                                 justo. Aenean tempor sagittis
                                 rhoncus. Aliquam ut ante id purus pretium feugiat vel sit amet felis. Phasellus luctus
                                 est scelerisque lacus scelerisque
                                 pellentesque.</p>
-                            <div class="articleIcons">
-                                <img src="./images/thumb-up.png" alt="like" class="icon iconLike">
-                                <img src="./images/share.png" alt="share" class="icon iconShare">
-                                <img src="./images/comment.png" alt="comment" class="icon iconComment">
+                            <div class="articleIcons grid placeItems-center">
+                                <img src="./images/thumb-up.png" alt="like">
+                                <img src="./images/share.png" alt="share">
+                                <img src="./images/comment.png" alt="comment" class="width-30 height-auto">
                             </div>
                         </div>
-                        <div class="article">
-                            <div class="title titleArticle">Half Life 3 in development!</div>
-                            <p class="text textArticle">Ut ultricies et ligula id commodo. Ut metus risus, vehicula sed
+                        <div class="article grid">
+                            <div class="titleArticle font-weight-700">Half Life 3 in development!</div>
+                            <p class="textArticle">Ut ultricies et ligula id commodo. Ut metus risus, vehicula sed
                                 ultrices ornare, dignissim vel quam. Praesent
                                 condimentum nulla eget placerat rutrum. In auctor risus nec vehicula cursus. Aliquam
                                 urna neque, iaculis sed risus vel,
@@ -122,31 +139,66 @@
                                 interdum laoreet leo, ac egestas ligula rhoncus ut. Morbi sed tincidunt ex. Curabitur
                                 dictum nisl at neque hendrerit
                                 gravida. Donec laoreet tortor sed volutpat mattis.</p>
-                            <div class="articleIcons">
-                                <img src="./images/thumb-up.png" alt="like" class="icon iconLike">
-                                <img src="./images/share.png" alt="share" class="icon iconShare">
-                                <img src="./images/comment.png" alt="comment" class="icon iconComment">
+                            <div class="articleIcons grid placeItems-center">
+                                <img src="./images/thumb-up.png" alt="like">
+                                <img src="./images/share.png" alt="share">
+                                <img src="./images/comment.png" alt="comment" class="width-30 height-auto">
                             </div>
                         </div>
-                        <div class="article">
-                            <div class="title titleArticle">First look at Call of Duty 32</div>
-                            <p class="text textArticle">Pellentesque bibendum a leo id vehicula. Class aptent taciti
+                        <div class="article grid">
+                            <div class="titleArticle font-weight-700">First look at Call of Duty 32</div>
+                            <p class="textArticle">Pellentesque bibendum a leo id vehicula. Class aptent taciti
                                 sociosqu ad litora torquent per conubia nostra, per
                                 inceptos himenaeos. Nam vitae libero eget nisl tristique vestibulum egestas vel mauris.
                                 Sed faucibus tortor urna.
                                 Praesent vel nisl tincidunt, ullamcorper dolor eu, euismod lorem. Fusce sagittis eu
                                 tortor ut convallis. Ut ut erat
                                 ipsum. Vestibulum tempus dapibus purus vel finibus. Ut vitae dolor at turpis tristique
-                                commodo.</p>
-                            <div class="articleIcons">
-                                <img src="./images/thumb-up.png" alt="like" class="icon iconLike">
-                                <img src="./images/share.png" alt="share" class="icon iconShare">
-                                <img src="./images/comment.png" alt="comment" class="icon iconComment">
+                                commodo. Fusce sagittis eu
+                                tortor ut convallis.</p>
+                            <div class="articleIcons grid placeItems-center">
+                                <img src="./images/thumb-up.png" alt="like">
+                                <img src="./images/share.png" alt="share">
+                                <img src="./images/comment.png" alt="comment" class="width-30 height-auto">
                             </div>
                         </div>
-                        <div class="article">
-                            <div class="title titleArticle">Best gaming phones for your dog</div>
-                            <p class="text textArticle">Vestibulum lectus nisl, mollis nec dui in, viverra gravida nisl.
+                        <div class="article grid">
+                            <div class="titleArticle font-weight-700">Battlefield 7890 first look</div>
+                            <p class="textArticle">Pellentesque bibendum a leo id vehicula. Class aptent taciti
+                                sociosqu ad litora torquent per conubia nostra, per
+                                inceptos himenaeos. Nam vitae libero eget nisl tristique vestibulum egestas vel mauris.
+                                Sed faucibus tortor urna.
+                                Praesent vel nisl tincidunt, ullamcorper dolor eu, euismod lorem. Fusce sagittis eu
+                                tortor ut convallis. Ut ut erat
+                                ipsum. Vestibulum tempus dapibus purus vel finibus. Ut vitae dolor at turpis tristique
+                                commodo. Nam vitae libero eget nisl tristique vestibulum egestas vel mauris. Nam vitae
+                                libero eget nisl tristique vestibulum egestas vel mauris.</p>
+                            <div class="articleIcons grid placeItems-center">
+                                <img src="./images/thumb-up.png" alt="like">
+                                <img src="./images/share.png" alt="share">
+                                <img src="./images/comment.png" alt="comment" class="width-30 height-auto">
+                            </div>
+                        </div>
+                        <div class="article grid">
+                            <div class="titleArticle font-weight-700">Lawbreakers 2 revealed!</div>
+                            <p class="textArticle">Pellentesque bibendum a leo id vehicula. Class aptent taciti
+                                sociosqu ad litora torquent per conubia nostra, per
+                                inceptos himenaeos. Nam vitae libero eget nisl tristique vestibulum egestas vel mauris.
+                                Sed faucibus tortor urna.
+                                Praesent vel nisl tincidunt, ullamcorper dolor eu, euismod lorem. Fusce sagittis eu
+                                tortor ut convallis. Ut ut erat
+                                ipsum. Vestibulum tempus dapibus purus vel finibus. Ut vitae dolor at turpis tristique
+                                commodo. Fusce sagittis eu
+                                tortor ut convallis.</p>
+                            <div class="articleIcons grid placeItems-center">
+                                <img src="./images/thumb-up.png" alt="like">
+                                <img src="./images/share.png" alt="share">
+                                <img src="./images/comment.png" alt="comment" class="width-30 height-auto">
+                            </div>
+                        </div>
+                        <div class="article grid">
+                            <div class="titleArticle font-weight-700">Best gaming phones for your cat</div>
+                            <p class="textArticle">Vestibulum lectus nisl, mollis nec dui in, viverra gravida nisl.
                                 Vestibulum sed ornare lacus. Orci varius natoque
                                 penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut elit quam,
                                 pellentesque eu nisl lacinia, accumsan
@@ -155,15 +207,16 @@
                                 mattis erat ullamcorper id. Praesent iaculis volutpat ligula, vel scelerisque lacus
                                 fermentum et. Fusce rutrum eget
                                 velit eu lobortis.</p>
-                            <div class="articleIcons">
-                                <img src="./images/thumb-up.png" alt="like" class="icon iconLike">
-                                <img src="./images/share.png" alt="share" class="icon iconShare">
-                                <img src="./images/comment.png" alt="comment" class="icon iconComment">
+                            <div class="articleIcons grid placeItems-center">
+                                <img src="./images/thumb-up.png" alt="like">
+                                <img src="./images/share.png" alt="share">
+                                <img src="./images/comment.png" alt="comment" class="width-30 height-auto">
                             </div>
                         </div>
-                        <div class="article">
-                            <div class="title titleArticle">Sonic the Hedgehog the Movie the Game Review</div>
-                            <p class="text textArticle">Ut vitae ligula enim. Nunc nisi est, rhoncus sit amet sapien sit
+                        <div class="article grid">
+                            <div class="title titleArticle font-weight-700">Sonic the Hedgehog the Movie the Game Review
+                            </div>
+                            <p class="textArticle">Ut vitae ligula enim. Nunc nisi est, rhoncus sit amet sapien sit
                                 amet, placerat blandit metus. Aenean ullamcorper sit
                                 amet dolor non volutpat. Vestibulum suscipit turpis semper leo aliquam, et scelerisque
                                 ligula congue. Aliquam blandit id
@@ -175,66 +228,63 @@
                                 elementum imperdiet urna ornare
                                 tincidunt. Morbi nunc leo, luctus in dignissim finibus, feugiat sit amet risus. Proin
                                 venenatis vitae velit et sodales.</p>
-                            <div class="articleIcons">
-                                <img src="./images/thumb-up.png" alt="like" class="icon iconLike">
-                                <img src="./images/share.png" alt="share" class="icon iconShare">
-                                <img src="./images/comment.png" alt="comment" class="icon iconComment">
+                            <div class="articleIcons grid placeItems-center">
+                                <img src="./images/thumb-up.png" alt="like">
+                                <img src="./images/share.png" alt="share">
+                                <img src="./images/comment.png" alt="comment" class="width-30 height-auto">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="articles_side">
-                    <div id="eSportNews" class="orange">
-                        <div class="title titleInfobar">E-sport news</div>
-                        <div class="eSportinfo">
-                            <div class="title titleInfo">Leg of Legends</div>
-                            <p class="text textInfo">EWT's new ADC just went AFK during practice match versus RKGCOBG
-                                Royal
-                                King
-                                Geriatric Club Of Blind Gamers</p>
+                <div id="articles_side" class="grid gap-20 alignContent-start">
+                    <div class="font-size-25px font-weight-700">E-sport news</div>
+                    <div id="eSportNews" class="grid gap-20 color-white shadow border-radius-5px">
+                        <div class="eSportInfo grid">
+                            <div>Leg of Legends</div>
+                            <p>EWT's new ADC just went AFK during practice
+                                match versus LOLO Gamers</p>
                         </div>
-                        <div class="eSportinfo">
-                            <div class="title titleInfo">Valor Ant</div>
-                            <p class="text textInfo">"Agent Loremipsum's reworked abilities are super OP" says 5 year
+                        <div class="eSportInfo grid">
+                            <div>Valor Ant</div>
+                            <p>"Agent Loremipsum's reworked abilities are
+                                super OP" says 5 year
                                 old
                                 pro
                                 player
                                 Vladimir Kushnik.</p>
                         </div>
-                        <div class="eSportinfo">
-                            <div class="title titleInfo">Counter Stroke</div>
-                            <p class="text textInfo">Rare knife skin sold for 300 Cryptobanana Coins! Here is a list of
+                        <div class="eSportInfo grid">
+                            <div>Counter Stroke</div>
+                            <p>Rare knife skin sold for 300 Cryptobanana
+                                Coins! Here is a list of
                                 0
                                 things
                                 you
-                                can buy for that many Cryptobanana Coins.</p>
+                                can buy for that many Cryptobanana Coins. Its amazing!</p>
                         </div>
                     </div>
 
-                    <div id="friendList" class="violet">
-                        <div class="title titleFriendList">Friend List</div>
-                        <div class="onlineFriend">
-                            <img src="./images/person2.png" alt="user" class="icon iconUser">
-                            <div class="text textUserName">@EpicGamerxXx</div>
-                            <div class="text textUserStatus">Online</div>
+                    <div class="margin-top-50 font-size-25px font-weight-700">Friend List</div>
+                    <div id="friendList" class="grid gap-20 color-white shadow border-radius-5px">
+                        <div class="onlineFriend grid placeItems-center-start column-gap-10">
+                            <img src="./images/person2.png" alt="user" class="iconUser">
+                            <div class="userTag">@EpicGamerxXx</div>
+                            <div class="status">Online</div>
                         </div>
-                        <div class="onlineFriend">
-                            <img src="./images/person3.png" alt="user" class="icon iconUser">
-
-                            <div class="text textUserName">@HotGamerChickUwU</div>
-                            <div class="text textUserStatus">Away</div>
+                        <div class=" grid placeItems-center-start column-gap-10 onlineFriend">
+                            <img src="./images/person3.png" alt="user" class="iconUser">
+                            <div class="userTag">@HotGamerChickUwU</div>
+                            <div class="status">Away</div>
                         </div>
-                        <div class="onlineFriend">
-                            <img src="./images/person4.png" alt="user" class="icon iconUser">
-
-                            <div class="text textUserName">@SKTT1_Faker</div>
-                            <div class="text textUserStatus">Offline</div>
+                        <div class="grid placeItems-center-start column-gap-10 onlineFriend">
+                            <img src="./images/person4.png" alt="user" class="iconUser">
+                            <div class="userTag">@SKTT1_Faker</div>
+                            <div class="status">Offline</div>
                         </div>
-                        <div class="onlineFriend">
-                            <img src="./images/person5.png" alt="user" class="icon iconUser">
-
-                            <div class="text textUserName">@Erzk_SK</div>
-                            <div class="text textUserStatus">Online</div>
+                        <div class="grid placeItems-center-start column-gap-10 onlineFriend">
+                            <img src="./images/person5.png" alt="user" class="iconUser">
+                            <div class="userTag">@Erzk_SK</div>
+                            <div class="status">Online</div>
                         </div>
                     </div>
                 </div>
