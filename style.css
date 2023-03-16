@@ -20,6 +20,22 @@
     gap: 20px;
 }
 
+#searchBar input {
+    border-radius: 15px;
+    padding: 5px;
+    background-color: rgb(244, 244, 244);
+    place-items: center start;
+    width: 50%;
+}
+
+#sidebar {
+    gap: 100px;
+    place-items: start;
+    padding: 20px;
+    background-color: #4D9078;
+    min-height: 100vh;
+}
+
 .column-gap-10 {
     column-gap: 10px;
 }
@@ -148,11 +164,6 @@
 .shadow {
     box-shadow: 0px 0px 15px 0px black;
 }
-
-.search-field {
-    width: 50%;
-}
-
 
 .color-orange {
     background-color: #F78154;
